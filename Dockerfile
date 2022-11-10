@@ -1,6 +1,7 @@
 FROM node:16.0.0-alpine3.13 AS builder
 
 WORKDIR /app
+COPY package*.json ./
 
 RUN npm install
 
